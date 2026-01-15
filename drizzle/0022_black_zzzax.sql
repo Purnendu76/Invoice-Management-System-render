@@ -1,0 +1,5 @@
+-- CREATE TYPE "public"."user_role" AS ENUM('user', 'Admin', 'accountant');--> statement-breakpoint
+-- ALTER TABLE "users_auth" ALTER COLUMN "role" SET DEFAULT 'user'::"public"."user_role";--> statement-breakpoint
+-- ALTER TABLE "users_auth" ALTER COLUMN "role" SET DATA TYPE "public"."user_role" USING "role"::"public"."user_role";--> statement-breakpoint
+-- ALTER TABLE "my-invoicees" ADD COLUMN "created_at" timestamp DEFAULT now();--> statement-breakpoint
+-- ALTER TABLE "my-invoicees" ADD COLUMN "modified_at" timestamp DEFAULT now();
