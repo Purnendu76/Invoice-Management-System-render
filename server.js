@@ -68,6 +68,6 @@ process.on("unhandledRejection", (reason) => {
   console.error("Unhandled Rejection:", reason);
 });
 
-app.listen(5000, "localhost", () => {
+app.listen(5000, "0.0.0.0", () => {
   console.log(`🚀 Server running at http://localhost:5000`);
 });
