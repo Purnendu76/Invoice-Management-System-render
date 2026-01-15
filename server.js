@@ -15,7 +15,7 @@ const PORT = parseInt(process.env.PORT, 10) || 3000;
 
 // ✅ Middleware
 app.use(cors({
-  origin: "http://localhost:5174",
+  origin: process.env.CLIENT_URL || 'http://localhost:5174',
   credentials: true
 }));
 
